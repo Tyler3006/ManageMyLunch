@@ -1,3 +1,4 @@
+import { Outlet, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,15 +10,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload penis ass.
         </p>
-        <a
-          className="App-link"
-          href="Login.js"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Link to="Login.js">Login</Link>
       </header>
+      <Outlet/>
     </div>
   );
 }
